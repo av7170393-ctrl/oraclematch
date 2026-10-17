@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+.streamlit/secrets.toml
+# large raw files: download them yourself (see data/README.md)
+data/tmdb_5000_movies.csv
+data/tmdb_5000_credits.csv
+data/indian_movies.csv
+data/horror_movies.csv
+web-build/data.json

@@ -1,0 +1,57 @@
+{
+  "rmse": {
+    "Global mean": 1.0355,
+    "User + item bias": 0.8196,
+    "ALS matrix factorisation": 0.7962
+  },
+  "ranking": {
+    "Popularity": {
+      "precision": 0.0177,
+      "recall": 0.0258,
+      "ndcg": 0.0256,
+      "coverage": 0.004
+    },
+    "Item-based kNN": {
+      "precision": 0.0672,
+      "recall": 0.1074,
+      "ndcg": 0.1045,
+      "coverage": 0.238
+    },
+    "ALS matrix factorisation": {
+      "precision": 0.0232,
+      "recall": 0.0345,
+      "ndcg": 0.0344,
+      "coverage": 0.031
+    },
+    "Content profile (TF-IDF)": {
+      "precision": 0.0265,
+      "recall": 0.0417,
+      "ndcg": 0.038,
+      "coverage": 0.294
+    },
+    "Hybrid: ALS + content (w=0.65)": {
+      "precision": 0.0688,
+      "recall": 0.109,
+      "ndcg": 0.1041,
+      "coverage": 0.117
+    },
+    "Hybrid: item-kNN + content (w=0.65)": {
+      "precision": 0.0735,
+      "recall": 0.1165,
+      "ndcg": 0.1149,
+      "coverage": 0.219
+    }
+  },
+  "meta": {
+    "ratings": 140440,
+    "users": 2000,
+    "eval_users": 600,
+    "k": 10,
+    "relevant_rating": 4.0,
+    "hybrid_cf_weight": {
+      "als": 0.65,
+      "knn": 0.65
+    },
+    "note": "SYNTHETIC ratings; metrics demonstrate the pipeline, not real-world performance."
+  }
+}

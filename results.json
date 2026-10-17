@@ -1,0 +1,26 @@
+[
+  {
+    "model": "Baseline: overview only",
+    "genre_precision@10": 0.253,
+    "avg_rating_of_recs": 6.03,
+    "catalog_coverage": 0.706
+  },
+  {
+    "model": "Content TF-IDF (all tags)",
+    "genre_precision@10": 0.726,
+    "avg_rating_of_recs": 6.0,
+    "catalog_coverage": 0.707
+  },
+  {
+    "model": "Content + quality re-rank (alpha=0.85)",
+    "genre_precision@10": 0.709,
+    "avg_rating_of_recs": 6.74,
+    "catalog_coverage": 0.589
+  },
+  {
+    "model": "Content + quality re-rank (alpha=0.7)",
+    "genre_precision@10": 0.468,
+    "avg_rating_of_recs": 7.91,
+    "catalog_coverage": 0.213
+  }
+]
